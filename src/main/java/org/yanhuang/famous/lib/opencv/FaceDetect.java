@@ -69,10 +69,6 @@ public class FaceDetect {
 		return Imgcodecs.imread(path);
 	}
 
-	private Mat loadImageFromCp(String classPath) {
-		return Imgcodecs.imread(this.getClass().getResource(classPath).getFile());
-	}
-
 	public void saveImage(Mat imageMatrix, String targetPath) {
 		Imgcodecs.imwrite(targetPath, imageMatrix);
 	}
